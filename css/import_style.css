@@ -1,0 +1,190 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*immortal codex section*/
+.top-box{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-team{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.iso-team{
+    width: 320px;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.iso-team::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.iso-team:hover:after{
+    position: absolute;
+    content: '';     
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    opacity: 1;
+    transform: translateY(0);
+    background: linear-gradient(45deg, rgba(52, 58, 64, 0.8) 20%, rgba(0, 108, 255, 0));
+    z-index: 2;
+}
+.iso-team img{
+    height: auto;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 100%;    
+}
+.iso-team:hover img{
+    transform: scale(1.3) translate(5%, 5%);
+}
+.iso-team .profile-info {
+    overflow: hidden;
+	transform: translateX(-110%);
+	transition: all 0.5s ease;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	padding: 5px 15px;
+	border-left: 3px solid #ffffff;
+	border-radius: 15px 0 0 15px;
+	color: #ffffff;
+	z-index: 3;
+	opacity: 0;
+	
+}
+.iso-team:hover .profile-info{
+    opacity: 1;
+    transform: translateX(0);
+}
+.profile-info h3{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;    
+}
+.profile-info p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.profile-info h3, 
+.profile-info p{
+    transition: all 0.7s ease;
+    transform: translateX(-100%);   
+    overflow: hidden;
+}
+.iso-team:hover .profile-info h3, 
+.iso-team:hover .profile-info p{
+    transform: translateX(0);
+}
+/*immortal codex section -end */
+.carousel-item {
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 25px;
+	line-height: 1.9;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: darkorange;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #000;
+	margin-top: 15px;
+}
+
+#img_quality {
+    opacity: 1;
+}
+
+.w-100 {
+	height: 100vh;
+}
+
+#footer_text {
+	color: aliceblue;
+	font-size: 10px;
+}
+
+#footer_text:hover {
+	color:aliceblue
+}
+
+#footer_text:visited {
+	color: aliceblue
+}
+
+@media only screen and (max-width: 767px) {
+	.carousel-item {
+        min-height: 100px;
+    }
+    .carousel-caption {
+		bottom: 35px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+
+    #carousel_text {
+        font-size: 13px;
+    }
+
+    #img_quality {
+        opacity: 1;
+    }
+	
+.w-100 {
+	height: 50vh;
+}
+}
