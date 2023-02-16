@@ -42,7 +42,6 @@ body {
 
 .uc__art img {
 	width: 100%;
-    padding-top: 300px;
 }
 
 .title {
@@ -136,6 +135,9 @@ body {
 	border-radius: 20px;
 	background-color: black;
 	color: #fff;
+}
+.register-btn:hover {
+    color: #eeebeb;
 }
 
 .reminder {
