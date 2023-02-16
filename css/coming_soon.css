@@ -37,10 +37,12 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    position: relative;
 }
 
 .uc__art img {
-	width: 70%;
+	width: 100%;
+    padding-top: 300px;
 }
 
 .title {
@@ -93,7 +95,7 @@ body {
 .uc__form {
 	position: relative;
 	color: black;
-    text-align: center;
+    text-align: left;
 }
 
 .uc__form input {
@@ -148,6 +150,15 @@ body {
 .back-button {
     color: #fff;
 }
+.image-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
 
 @media only screen and (max-width: 767px) {
 	.uc__wrapper {
