@@ -18,34 +18,50 @@
       type="png/x-icon"
       media="(prefers-color-scheme: dark)"
     />
-    <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="js/sign_up.js"></script>
+    <title>Sign up</title>
   </head>
   <body class="bg-dark">
     <div class="uc__wrapper">
+      <div class="container">
+        <div class="row">
+          
+      <a href="index.html" ><p class="fas fa-arrow-left back-button"></p></a>
+    </div>
+</div>
       <div class="uc__details">
-        <h1 class="title">Coming Soon!</h1>
+         <h1 class="title">Registration Form</h1>
         <h3 class="intro">
-          We are working hard to give you a better experience.
+          Please fill in this form to create an account.
         </h3>
-        <p class="uc__description">
-          We are working hard on it & the site may go live very soon. We
-          promise, it will be worth the wait!
-        </p>
         <div class="uc__subscribe">
-          <h3>Get Notified When We Go Live</h3>
           <div class="uc__form">
             <form action="#">
-              <input type="email" class="email" placeholder="Email Address.." />
-              <input type="submit" class="submit" value="Get Notified" />
+              <div class="container">
+              <label class="#" id="#">Username</label><br />
+              <input class="form-margin" type="text" placeholder=" Enter Username" required id="username" name="username"><br />
+              <label class="#" id="#">Email</label><br />
+              <input class="form-margin" type="text" placeholder="Enter Email" required id="email"><br />
+              <label class="#" id="#">Password</label><br />
+              <input class="form-margin" type="password" placeholder="Enter Password" required id="password"><br />
+              <p class="reminder">Requires 8+ characters with 1 uppercase, 1 special character, and atleast 1 number.</p>
+              <label class="#" id="#">Confirm Password</label><br />
+              <input class="form-margin" type="password" placeholder="Confirm Password" required><br />
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              <button type="submit" class="register-btn" onclick="register()">Register</button>
+            </div>
+            <div class="container">
+              <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
             </form>
           </div>
         </div>
       </div>
-      <
       <div class="uc__art">
-        <a href="index.html"
-          ><img src="img/coming_soon.png" class="img-fluid" alt="waiting"
+        <a href="index.html"><img src="img/coming_soon.png" class="img-fluid" alt="waiting"
         /></a>
+        <div class="image-text">Start your journey now..</div>
       </div>
     </div>
   </body>
