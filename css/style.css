@@ -47,6 +47,54 @@ body {
 	font-size: 18px;
 	line-height: 0.3;
 }
+.content{
+    position:absolute;
+    bottom: 75px;
+    padding: 20px;
+    width: 700px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0.0;
+    transition: 0.1s;
+    background-color: #454e56;
+    z-index: 9999; 
+}
+
+.content .header{
+    display: flex;
+    align-items: center;
+}
+.content .content img{
+    grid-column: 1/2;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.content .header .infos{
+    margin-left: 1em;
+}
+.content .header .infos .name{
+    font-size: 1.25em;
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 600;
+}
+.content .header .infos .title{
+    font-size: 0.9em;
+    color:#969696;
+    font-weight: 500;
+}
+.content .body{
+    padding: 1em;
+}
+.content .body p{
+    font-size: 0.95em;
+    color: #272727;
+}
+
 .portfolio .card {
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
@@ -59,8 +107,68 @@ body {
 .team .card-body i {
 	font-size: 20px;
 }
+.book-tooltip{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#book:hover {
+    box-shadow: 20px 20px 100px -50px #000;    
+    transition: 0.5s;
+}
+#book2:hover {
+    box-shadow: 20px 20px 100px -50px #000;    
+    transition: 0.5s;
+}
+#book3:hover {
+    box-shadow: 20px 20px 100px -50px #000;    
+    transition: 0.5s;
+}
+#book4:hover {
+    box-shadow: 20px 20px 100px -50px #000;    
+    transition: 0.5s;
+}
+#book:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 1.5s;
+    transform:translateX(17.5%) translateY(170%);
+}
+#book2:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 1.5s;
+    transform:translateX(17.5%) translateY(300%);
+}
+#book3:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 1.5s;
+    transform:translateX(-85%) translateY(170%);
+}
+#book4:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 1.5s;
+    transform:translateX(-85%) translateY(300%);
+}
+.card_size {
+    height: 230px;
+    width: 210px;
+}
+.card-body{
+    padding: 5px;
+}
+@media only screen and (min-width: 768px) {
+    .big_card{
+        height: 100%;
+    }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.hide-content{
+        display: none;
+    }
 	.card {
 		margin-bottom: 30px;
 	}
@@ -69,6 +177,9 @@ body {
 	}
 }
 @media only screen and (max-width: 767px) {
+    .hide-content{
+        display: none;
+    }
 	.navbar-nav {
 		text-align: center;
 	}
