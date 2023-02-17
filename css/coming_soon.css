@@ -81,6 +81,7 @@ body {
 	width: 85%;
 	border-radius: 3px;
 	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+	margin: 0 auto;
 }
 
 .uc__subscribe h3 {
@@ -92,9 +93,11 @@ body {
 }
 
 .uc__form {
-	position: relative;
-	color: black;
+    position: relative;
+    color: black;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .uc__form input {
@@ -140,15 +143,42 @@ body {
     color: #eeebeb;
 }
 
-.reminder {
-	font-size: 12px;
-	color: rgb(54, 53, 53);
-	margin-top: 1rem;
-}
+.password-container {
+	position: relative;
+  }
+  
+  .password-toggle {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	height: 20px;
+  }
+  .password-toggle img {
+	width: 20px;
+	height: 20px;
+  }
 
-.form-margin {
-	margin-bottom: 15px;
-}
+  .password-toggle-confirm {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	height: 20px;
+  }
+  .password-toggle-confirm img {
+	width: 20px;
+	height: 20px;
+  }
+  
+  .reminder {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #888;
+  }
+
 .back-button {
     color: #fff;
 }
@@ -177,13 +207,36 @@ body {
 	}
 
 	.uc__art {
-		display: none;
+		flex-basis: 100%;
+		height: 50%;
+	  }
 	}
 
 	.uc__subscribe {
-		width: 100%;
-	}
+		background-color: rgb(255, 193, 7);
+		padding: 1.5rem;
+		width: 85%;
+		border-radius: 3px;
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+		margin: 0 auto;
+	  }
     .uc__form .form-margin {
         text-align: center;
       }
-}
+	  @media only screen and (max-width: 767px) {
+		.uc__form .password-container {
+		  width: 100%;
+		}
+	  
+		.uc__form input[type="password"] {
+		  width: calc(100% - 40px);
+		}
+	  }
+	  @media only screen and (max-width: 820px) {
+		.uc__art {
+			display: none;
+		}
+		.image-text {
+			display: none;
+		}
+	  }
