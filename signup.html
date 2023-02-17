@@ -37,25 +37,36 @@
         </h3>
         <div class="uc__subscribe">
           <div class="uc__form">
-            <form action="#">
+            <form action="#" onsubmit="register(); return false;">
               <div class="container">
-              <label class="#" id="#">Username</label><br />
-              <input class="form-margin" type="text" placeholder=" Enter Username" required id="username" name="username"><br />
-              <label class="#" id="#">Email</label><br />
-              <input class="form-margin" type="text" placeholder="Enter Email" required id="email"><br />
-              <label class="#" id="#">Password</label><br />
-              <input class="form-margin" type="password" placeholder="Enter Password" required id="password"><br />
-              <p class="reminder">Requires 8+ characters with 1 uppercase, 1 special character, and atleast 1 number.</p>
-              <label class="#" id="#">Confirm Password</label><br />
-              <input class="form-margin" type="password" placeholder="Confirm Password" required><br />
-              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-              <button type="submit" class="register-btn" onclick="register()">Register</button>
-            </div>
-            <div class="container">
-              <p>Already have an account? <a href="#">Sign in</a>.</p>
-            </div>
+                <label class="#" id="#">Username</label><br />
+                <input class="form-margin" type="text" placeholder="Enter Username" required id="username" name="username"><br />
+                <label class="#" id="#">Email</label><br />
+                <input class="form-margin" type="text" placeholder="Enter Email" required id="email"><br />
+                <label class="#" id="#">Password</label><br />
+                <div class="password-container">
+                  <input class="form-margin" type="password" placeholder="Enter Password" required id="password">
+                  <span class="password-toggle" onclick="showPassword()">
+                    <img src="img/view.png">
+                  </span>
+                </div>
+                <p class="reminder">Requires 8+ characters with 1 uppercase, 1 special character, and at least 1 number.</p>
+                <label class="#" id="#">Confirm Password</label><br />
+                <div class="password-container">
+                  <input class="form-margin" type="password" placeholder="Enter Password" required id="confirm-password">
+                  <span class="password-toggle-confirm" onclick="showConfirmPassword()">
+                    <img src="img/view.png">
+                  </span>
+                </div>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <button type="submit" class="register-btn">Register</button>
+              </div>
+              <div class="container">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+              </div>
             </form>
           </div>
+          
         </div>
       </div>
       <div class="uc__art">
