@@ -355,12 +355,12 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                   <a href="https://www.facebook.com" target="_blank" rel="">
-                    <i class="fa-brands fa-facebook-f"></i> </a
-                  ><a href="https://www.facebook.com" target="_blank" rel="">
-                    <i class="fa-brands fa-facebook-f"></i> </a
-                  ><a href="https://www.facebook.com" target="_blank" rel="">
-                    <i class="fa-brands fa-facebook-f"></i> </a
-                  ><a href="https://www.facebook.com" target="_blank" rel="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank" rel="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank" rel="">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </div>
@@ -416,6 +416,27 @@
         <i class="fa-solid fa-coins"></i>
       </div>
     </div>
+
+    <div class="theme-btn">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
     <script src="js/userSlct.js"></script>
+    <script>
+      // Check screen width on page load
+      checkScreenWidth();
+
+      // Add event listener for screen resize
+      window.addEventListener("resize", checkScreenWidth);
+
+      function checkScreenWidth() {
+        // Get the current screen width
+        var screenWidth = window.innerWidth;
+
+        // Redirect to another page if screen width is less than 400 pixels
+        if (screenWidth < 400) {
+          window.location.href = "./index.html";
+        }
+      }
+    </script>
   </body>
 </html>
