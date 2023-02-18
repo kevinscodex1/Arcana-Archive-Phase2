@@ -227,3 +227,44 @@ body {
 	  margin-top: 3rem;
 	}
   }
+a.footers{
+    color:white;
+    text-align: left;
+}
+  /* unvisited link */
+  a.footers:link {
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a.footers:visited {
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a.footers:hover {
+    color: #E4A11B;
+  }
+  
+  /* selected link */
+  a.footers:active {
+    text-decoration: underline;
+    color: #E4A11B;
+  } 
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+
+    color:white;
+  }
+  .fa:hover {
+    color: #E4A11B;
+}
+
+
+  
