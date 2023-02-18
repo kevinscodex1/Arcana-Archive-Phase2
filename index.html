@@ -34,10 +34,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/transition.css" />
     <link rel="stylesheet" href="css/import_style.css" />
+    <link rel="stylesheet" href="css/ads.css" />
     <style>
       .navbar-dark .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 193, 7, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -52,14 +55,22 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="home.html">
           <img class="me-2" src="img/web_logo.png" width="40" height="40" />
-          <span class="text-warning">ARC<span class="text-white">ANA</span>
+          <span class="text-warning">ARC</span
+          ><span class="text-white">ANA</span>
         </a>
-        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -81,51 +92,185 @@
               <a class="nav-link" href="index.html#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-warning ms-2 mt-1" href="signin.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log In">Sign In</a>
+              <a
+                class="btn btn-warning ms-2 mt-1"
+                href="signin.html"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Log In"
+                >Sign In</a
+              >
             </li>
           </ul>
         </div>
       </div>
-      <a class="text-warning position-absolute top-0 end-0 mt-2 mt-md-3 me-3"
-  id="user-icon-1"
-  href="user.html"
-  data-bs-toggle="tooltip"
-  data-bs-placement="right"
-  title="User Profile"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="currentColor"
-    class="bi bi-person-circle"
-    viewBox="0 0 16 16"
-  >
-    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-  </svg>
-</a>
-<a class="text-warning position-absolute top-0 end-0 mt-3 mt-md-0 me-3 d-lg-none"
-  id="user-icon-2"
-  href="user.html"
-  data-bs-toggle="tooltip"
-  data-bs-placement="right"
-  title="User Profile"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="currentColor"
-    class="bi bi-person-circle"
-    viewBox="0 0 16 16"
-  >
-    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-  </svg>
-</a>
-</a>
+      <a
+        class="text-warning position-absolute top-0 end-0 mt-2 mt-md-3 me-3"
+        id="user-icon-1"
+        href="user.html"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="User Profile"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-person-circle"
+          viewBox="0 0 16 16"
+        >
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path
+            fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+          />
+        </svg>
+      </a>
+      <a
+        class="text-warning position-absolute top-0 end-0 mt-3 mt-md-0 me-3 d-lg-none"
+        id="user-icon-2"
+        href="user.html"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="User Profile"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-person-circle"
+          viewBox="0 0 16 16"
+        >
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path
+            fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+          />
+        </svg>
+      </a>
     </nav>
+    <div>
+      <a
+        href="https://www.lazada.com.ph/?exlaz=d_1:mm_150050845_51350203_2010350203::11:16280055359!136285272369!lazada!b!aud-1293936317695:kwd-1552299999!c&exlaz=d_1:mm_150050845_51350203_2010350203::11:16280055359!136285272369!lazada!b!aud-1293936317695:kwd-1552299999!c!!!!582980954775!&gclid=Cj0KCQiAi8KfBhCuARIsADp-A54fzQaQ2Pu_aHp3-maneouxDbnLsWFGPNR2HUqp9HumDE2GCcNei4QaAimNEALw_wcB"
+        target="_blank"
+        ><img
+          hidden
+          src="img/ads_2.png"
+          alt="hero_img"
+          srcset=""
+          style="
+            width: 250px;
+            height: 250px;
+            z-index: 49;
+            position: fixed;
+            right: 10px;
+            left: 0;
+            opacity: 1;
+          "
+          class="ads_adjust popout_L"
+      /></a>
+      <button
+        hidden
+        class="popout_L text-center bg-warning"
+        type="button"
+        id="closeButton"
+        style="
+          width: 25px;
+          height: 30px;
+          position: fixed;
+          right: 10px;
+          left: 0;
+          z-index: 100;
+          font-size: 20px;
+          cursor: pointer;
+          border: none;
+        "
+      >
+        <b>x</b>
+      </button>
+    </div>
+    <div>
+      <a
+        href="https://www.lazada.com.ph/?exlaz=d_1:mm_150050845_51350203_2010350203::11:16280055359!136285272369!lazada!b!aud-1293936317695:kwd-1552299999!c&exlaz=d_1:mm_150050845_51350203_2010350203::11:16280055359!136285272369!lazada!b!aud-1293936317695:kwd-1552299999!c!!!!582980954775!&gclid=Cj0KCQiAi8KfBhCuARIsADp-A54fzQaQ2Pu_aHp3-maneouxDbnLsWFGPNR2HUqp9HumDE2GCcNei4QaAimNEALw_wcB"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          hidden
+          src="img/ads_2.png"
+          alt="hero_img"
+          srcset=""
+          style="
+            width: 250px;
+            height: 250px;
+            z-index: 49;
+            position: fixed;
+            right: 0;
+            opacity: 1;
+          "
+          class="ads_adjust popout_R"
+      /></a>
+      <button
+        hidden
+        class="popout_R text-center bg-warning"
+        type="button"
+        id="closeButton2"
+        style="
+          width: 25px;
+          height: 30px;
+          position: fixed;
+          right: 0;
+          z-index: 100;
+          font-size: 20px;
+          cursor: pointer;
+          border: none;
+        "
+      >
+        <b>x</b>
+      </button>
+    </div>
+    <div>
+      <a
+        href="https://shopee.ph/?utm_campaign=-&utm_content=1637-34cf880f223a4dccadc21c799900e3ea--102918&utm_medium=affiliates&utm_source=an_13266010000&utm_term=8t2djs28472w"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          hidden
+          src="img/ads_3.webp"
+          alt="hero_img"
+          srcset=""
+          style="
+            width: 900px;
+            height: 175px;
+            z-index: 49;
+            position: fixed;
+            bottom: 0;
+            opacity: 1;
+          "
+          id="popout_banner"
+          class="popout_B"
+      /></a>
+      <button
+        hidden
+        class="popout_B text-center bg-warning"
+        type="button"
+        id="closeButton3"
+        style="
+          width: 25px;
+          height: 30px;
+          position: fixed;
+          bottom: 0;
+          z-index: 100;
+          font-size: 20px;
+          cursor: pointer;
+          border: none;
+        "
+      >
+        <b>x</b>
+      </button>
+    </div>
     <div class="trans_container">
       <!--- Main Slide Carousel-->
       <section id="carousel_main">
@@ -832,5 +977,41 @@
     <!-- All Js -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        function unliPop1() {
+          $(".popout_L").removeAttr("hidden");
+          $("#closeButton").click(function () {
+            $(".popout_L").remove();
+          });
+        }
+
+        setTimeout(unliPop1, 5000);
+      });
+
+      $(document).ready(function () {
+        function unliPop2() {
+          $(".popout_R").removeAttr("hidden");
+          $("#closeButton2").click(function () {
+            $(".popout_R").remove();
+          });
+        }
+
+        setTimeout(unliPop2, 10000);
+      });
+
+      $(document).ready(function () {
+        function unliPop3() {
+          $("#popout_banner").removeAttr("hidden");
+          $("#closeButton3").removeAttr("hidden");
+          $("#closeButton3").click(function () {
+            $("#popout_banner").remove();
+            $("#closeButton3").remove();
+          });
+        }
+
+        setTimeout(unliPop3, 15000);
+      });
+    </script>
   </body>
 </html>
