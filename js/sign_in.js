@@ -7,16 +7,16 @@ $(document).ready(function () {
   
     $("#login_form").submit(function (x) {
       // Prevent the form from submitting and refreshing the page
-      
+      x.preventDefault();
   
       // Get the values entered in the email and password fields
       const email = $("#email").val();
       const password = $("#password").val();
-      const username = $("#username").val();
+      const username = $("#email").val();
   
       // Check if the email and password match the criteria for a valid account
       if (
-        (email == "blacstar01@samplemail.com" || username == "blackstar01") &&
+        (email == "blackstar01@samplemail.com" || username == "blackstar01") &&
         password == "stAcked*123"
       ) {
         // Check if the user wants to be remembered
@@ -32,6 +32,5 @@ $(document).ready(function () {
         // Show an error message if the email and password don't match
         alert("Invalid email or password");
       }
-      x.preventDefault();
     });
   });
