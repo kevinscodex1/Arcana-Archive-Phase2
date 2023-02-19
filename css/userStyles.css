@@ -38,6 +38,26 @@
   --color-grey-6: #12181b;
 }
 
+/* CSS for light mode */
+.light-mode .theme-btn .dark-only {
+  display: none;
+}
+
+/* CSS for dark mode */
+.theme-btn .light-only {
+  display: none;
+}
+
+/* CSS for light mode with dark-only element visible */
+.light-mode .theme-btn .light-only {
+  display: inline-block;
+}
+
+/* CSS for dark mode with light-only element visible */
+.dark-mode .theme-btn .dark-only {
+  display: inline-block;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: "Montserrat", sans-serif;
@@ -132,13 +152,13 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(50%);
+  transition: none !important;
 }
 .controls .active-btn {
-  background-color: var(--color-secondary) !important;
-  transition: var(--transition-1);
+  background-color: var(--color-black) !important;
 }
 .controls .active-btn i {
-  color: var(--color-white) !important;
+  color: var(--color-secondary) !important;
 }
 .controls .control {
   padding: 1rem;
@@ -505,7 +525,7 @@ section {
 
 .blogs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }

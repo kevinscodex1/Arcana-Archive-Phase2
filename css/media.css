@@ -16,17 +16,33 @@
   .left-header .h-shape {
     display: none;
   }
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .timeline {
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    margin-bottom: 3rem !important;
+    bottom: auto !important;
+  }
   .controls {
-    top: auto;
+    top: auto !important;
     bottom: 0 !important;
     flex-direction: row !important;
     justify-content: center;
     left: 50%;
-    transform: translateX(-50%) translateY(47%) !important;
-    background-color: var(--color-secondary);
+    transform: translateX(-50%) !important;
+    background-color: #f0ad4e;
     width: 100%;
   }
   .controls .control {
-    margin: 1rem 0.3rem;
+    margin: 1rem 2rem !important;
   }
 }/*# sourceMappingURL=media.css.map */
