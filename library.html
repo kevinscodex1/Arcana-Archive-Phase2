@@ -32,7 +32,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
       rel="stylesheet"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/transition.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -47,6 +48,10 @@
       .navbar-dark .navbar-toggler-icon {
         border: 2px solid rgb(255, 193, 7);
       }
+      body {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
     </style>
     <link rel="stylesheet" href="css/test.css" />
     <!--All CSS--end-->
@@ -54,14 +59,22 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="home.html">
           <img class="me-2" src="img/web_logo.png" width="40" height="40" />
-          <span class="text-warning">ARC<span class="text-white">ANA</span>
+          <span class="text-warning">ARC</span
+          ><span class="text-white">ANA</span>
         </a>
-        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -83,50 +96,64 @@
               <a class="nav-link" href="index.html#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-warning ms-2 mt-1" href="signin.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log In">Sign In</a>
+              <a
+                class="btn btn-warning ms-2 mt-1"
+                href="signin.html"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Log In"
+                >Sign In</a
+              >
             </li>
           </ul>
         </div>
       </div>
-      <a class="text-warning position-absolute top-0 end-0 mt-2 mt-md-3 me-3"
-  id="user-icon-1"
-  href="user.html"
-  data-bs-toggle="tooltip"
-  data-bs-placement="right"
-  title="User Profile"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="currentColor"
-    class="bi bi-person-circle"
-    viewBox="0 0 16 16"
-  >
-    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-  </svg>
-</a>
-<a class="text-warning position-absolute top-0 end-0 mt-3 mt-md-0 me-3 d-lg-none"
-  id="user-icon-2"
-  href="user.html"
-  data-bs-toggle="tooltip"
-  data-bs-placement="right"
-  title="User Profile"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="currentColor"
-    class="bi bi-person-circle"
-    viewBox="0 0 16 16"
-  >
-    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-  </svg>
-</a>
-</a>
+      <a
+        class="text-warning position-absolute top-0 end-0 mt-2 mt-md-3 me-3"
+        id="user-icon-1"
+        href="user.html"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="User Profile"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-person-circle"
+          viewBox="0 0 16 16"
+        >
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path
+            fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+          />
+        </svg>
+      </a>
+      <a
+        class="text-warning position-absolute top-0 end-0 mt-3 mt-md-0 me-3 d-lg-none"
+        id="user-icon-2"
+        href="user.html"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="User Profile"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-person-circle"
+          viewBox="0 0 16 16"
+        >
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path
+            fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+          />
+        </svg>
+      </a>
     </nav>
     <div class="trans_container">
       <!-- immortal section starts-->
@@ -260,344 +287,361 @@
               </div>
             </div>
           </div>
-
-          <div class="row p-5" id="pannel">
-            <h1
-              class="display-3 text-center text-muted"
-              id="not_find_any_thing"
-            ></h1>
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book">
-                <img
-                  class="card-img-top card_size card_size"
-                  src="img/horus_rising.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Horus Rising BY Dan Abnett</h5>
-                  </div>
-                  <p class="card-text text_font">4.4 ⭐ and 430278 reads.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to Horus Rising Page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+          <div class="card_con">
+            <div class="row p-5" id="pannel">
+              <h1
+                class="display-3 text-center text-muted"
+                id="not_find_any_thing"
+              ></h1>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book">
+                  <img
+                    class="card-img-top card_size card_size"
+                    src="img/horus_rising.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Horus Rising BY Dan Abnett</h5>
+                    </div>
+                    <p class="card-text text_font">4.4 ⭐ and 430278 reads.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to Horus Rising Page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book">
-                <img
-                  class="card-img-top card_size card_size"
-                  src="img/kings_avatar.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">
-                      The King's Avatar By Butterfly Blue
-                    </h5>
-                  </div>
-                  <p class="card-text text_font">4.4 ⭐ and 440257 reads.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to The King's Avatar Page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book">
+                  <img
+                    class="card-img-top card_size card_size"
+                    src="img/kings_avatar.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">
+                        The King's Avatar By Butterfly Blue
+                      </h5>
+                    </div>
+                    <p class="card-text text_font">4.4 ⭐ and 440257 reads.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to The King's Avatar Page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book">
-                <img
-                  class="card-img-top card_size"
-                  src="img/way_of_kings.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">
-                      Way Of Kings By Brandon Sanderson
-                    </h5>
-                  </div>
-                  <p class="card-text text_font">4.4 ⭐ and 430278 reads.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to Way Of Kings page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book">
+                  <img
+                    class="card-img-top card_size"
+                    src="img/way_of_kings.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">
+                        Way Of Kings By Brandon Sanderson
+                      </h5>
+                    </div>
+                    <p class="card-text text_font">4.4 ⭐ and 430278 reads.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to Way Of Kings page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book3">
-                <img
-                  class="card-img-top card_size"
-                  src="img/for_the _emperor.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">
-                      For The Emperor by Sandy Mitchell
-                    </h5>
-                  </div>
-                  <p class="card-text text_font">4.3 ⭐ and 420058 reads.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to For the Emperor page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book3">
+                  <img
+                    class="card-img-top card_size"
+                    src="img/for_the _emperor.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">
+                        For The Emperor by Sandy Mitchell
+                      </h5>
+                    </div>
+                    <p class="card-text text_font">4.3 ⭐ and 420058 reads.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to For the Emperor page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book2">
-                <img
-                  class="card-img-top card_size"
-                  src="img/xenos.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Xenos BY Dan Abnett</h5>
-                  </div>
-                  <p class="card-text text_font">4.3 ⭐ and 418900 reads.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to Xenos page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book2">
+                  <img
+                    class="card-img-top card_size"
+                    src="img/xenos.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Xenos BY Dan Abnett</h5>
+                    </div>
+                    <p class="card-text text_font">4.3 ⭐ and 418900 reads.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to Xenos page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book2">
-                <img
-                  class="card-img-top card_size"
-                  src="img/galaxy_in_flames.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Galaxy In Flames by Ben Counter</h5>
-                  </div>
-                  <p class="card-text text_font">4.2 ⭐ and 408768 reads.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to Galaxy IN Flames page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book2">
+                  <img
+                    class="card-img-top card_size"
+                    src="img/galaxy_in_flames.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">
+                        Galaxy In Flames by Ben Counter
+                      </h5>
+                    </div>
+                    <p class="card-text text_font">4.2 ⭐ and 408768 reads.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to Galaxy IN Flames page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book2">
-                <img
-                  class="card-img-top card_size"
-                  src="img/avenging_son.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Avenging son By Guy Haley</h5>
-                  </div>
-                  <p class="card-text text_font">4.2⭐ and 371090.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to Avenging Son page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book2">
+                  <img
+                    class="card-img-top card_size"
+                    src="img/avenging_son.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Avenging son By Guy Haley</h5>
+                    </div>
+                    <p class="card-text text_font">4.2⭐ and 371090.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to Avenging Son page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3 mt-5">
-              <div class="p-2" id="book4">
-                <img class="card-img-top card_size" src="img/atg.jpg" alt="" />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Against The Gods By Mars Gravity</h5>
-                  </div>
-                  <p class="card-text text_font">4.2 ⭐ and 370902 reads.</p>
-                  <div class="d-flex justify-content-between">
-                    <a
-                      href="#"
-                      class="btn btn-warning mt-2"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      title="Go to Against the Gods page"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-                <div class="content hide-content">
-                  <div class="header">
-                    <img src="img/avenging_son.jpg" />
-                    <div class="infos">
-                      <h3 class="name">Jeams Middleman</h3>
-                      <p class="title">Web Developer / Web Designer</p>
+              <div class="col-md-3 mt-5">
+                <div class="p-2" id="book4">
+                  <img
+                    class="card-img-top card_size"
+                    src="img/atg.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">
+                        Against The Gods By Mars Gravity
+                      </h5>
+                    </div>
+                    <p class="card-text text_font">4.2 ⭐ and 370902 reads.</p>
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning mt-2"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        title="Go to Against the Gods page"
+                        >Read More</a
+                      >
                     </div>
                   </div>
-                  <div class body=".book-tooltip">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    </p>
+                  <div class="content hide-content">
+                    <div class="header">
+                      <img src="img/avenging_son.jpg" />
+                      <div class="infos">
+                        <h3 class="name">Jeams Middleman</h3>
+                        <p class="title">Web Developer / Web Designer</p>
+                      </div>
+                    </div>
+                    <div class body=".book-tooltip">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -619,161 +663,6 @@
       </section>
 
       <!--library Section-->
-
-      <!-- team starts -->
-      <section class="team section-padding" id="team">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="section-header text-center pb-5">
-                <h2>Our Team</h2>
-                <p>
-                  Here are some of our finest translators, industrious editors
-                  and innovative authors.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card text-center pb-2 big_card">
-                <!-- <div class="card text-center h-80 pb-2 small_card"> -->
-                <div class="card-body">
-                  <img
-                    src="img/team-1.jpg"
-                    alt=""
-                    class="img-fluid rounded-circle"
-                  />
-                  <h3 class="card-title py-2">Author Jiggs</h3>
-                  <p class="card-text">
-                    Author Jiggs writer of QQB chronicles.
-                  </p>
-                  <p class="socials">
-                    <a href="https://twitter.com"
-                      ><i class="bi bi-twitter text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.facebook.com"
-                      ><i class="bi bi-facebook text-dark mx-1"></i
-                    ></a>
-                    <a href="https://ph.linkedin.com"
-                      ><i class="bi bi-linkedin text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.instagram.com"
-                      ><i class="bi bi-instagram text-dark mx-1"></i
-                    ></a>
-                  </p>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card text-center pb-2 big_card">
-                <!-- <div class="card text-center h-80 pb-2 small_card"> -->
-                <div class="card-body">
-                  <img
-                    src="img/team-2.jpg"
-                    alt=""
-                    class="img-fluid rounded-circle"
-                  />
-                  <h3 class="card-title py-2">Editor Jiggs</h3>
-                  <p class="card-text">
-                    Worked with many great authors in polishing their works, he
-                    had a hand in one of the Immortal Codexes "Way Of Kings" and
-                    helped polish the work of the author.
-                  </p>
-                  <p class="socials">
-                    <a href="https://twitter.com"
-                      ><i class="bi bi-twitter text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.facebook.com"
-                      ><i class="bi bi-facebook text-dark mx-1"></i
-                    ></a>
-                    <a href="https://ph.linkedin.com"
-                      ><i class="bi bi-linkedin text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.instagram.com"
-                      ><i class="bi bi-instagram text-dark mx-1"></i
-                    ></a>
-                  </p>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card text-center pb-2 big_card">
-                <!-- <div class="card text-center h-80 pb-2 small_card"> -->
-                <div class="card-body">
-                  <img
-                    src="img/team-3.jpg"
-                    alt=""
-                    class="img-fluid rounded-circle"
-                  />
-                  <h3 class="card-title py-2">Translator Jiggs</h3>
-                  <p class="card-text">
-                    Translated over 300 selections to Filipino, English and
-                    Japanese
-                  </p>
-                  <p class="socials">
-                    <a href="https://twitter.com"
-                      ><i class="bi bi-twitter text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.facebook.com"
-                      ><i class="bi bi-facebook text-dark mx-1"></i
-                    ></a>
-                    <a href="https://ph.linkedin.com"
-                      ><i class="bi bi-linkedin text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.instagram.com"
-                      ><i class="bi bi-instagram text-dark mx-1"></i
-                    ></a>
-                  </p>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card text-center pb-2 big_card">
-                <!-- <div class="card text-center h-80 pb-2 small_card"> -->
-                <div class="card-body">
-                  <img
-                    src="img/team-4.jpg"
-                    alt=""
-                    class="img-fluid rounded-circle"
-                  />
-                  <h3 class="card-title py-2">Administrator Jiggs</h3>
-                  <p class="card-text">
-                    Contact him for inquiries/reports about our website and
-                    he'll reply ASAP.
-                  </p>
-                  <p class="socials">
-                    <a href="https://twitter.com"
-                      ><i class="bi bi-twitter text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.facebook.com"
-                      ><i class="bi bi-facebook text-dark mx-1"></i
-                    ></a>
-                    <a href="https://ph.linkedin.com"
-                      ><i class="bi bi-linkedin text-dark mx-1"></i
-                    ></a>
-                    <a href="https://www.instagram.com"
-                      ><i class="bi bi-instagram text-dark mx-1"></i
-                    ></a>
-                  </p>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <p class="text-center">
-              <a href="teams.html" class="btn bg-warning text-dark"
-                >Learn More</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- team ends -->
       <!-- Contact starts -->
       <section id="contact" class="contact section-padding">
         <div class="container mt-5 mb-5">
@@ -859,6 +748,18 @@
     <!-- footer ends -->
 
     <!-- All Js -->
+    <script>
+      $(document).ready(function () {
+        function showSubscribe() {
+          $(".popout_L").removeAttr("hidden");
+          $("#closeButton").click(function () {
+            $(".popout_L").remove();
+          });
+        }
+
+        setTimeout(showSubscribe, 5000);
+      });
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
