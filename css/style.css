@@ -160,17 +160,18 @@ body {
 .card-body{
     padding: 5px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 790px) {
     .big_card{
         height: 100%;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
 	.hide-content{
         display: none;
     }
 	.card {
 		margin-bottom: 30px;
+    height: 90% !important;
 	}
 	.img-area img {
 		width: 100%;
@@ -189,6 +190,7 @@ body {
 	}
 	.card {
 		margin-bottom: 30px;
+    height: 95% !important;
 	}
 }
 body {

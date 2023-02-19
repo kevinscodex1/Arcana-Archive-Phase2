@@ -91,6 +91,16 @@
         }
     }
 
+    @media screen and (max-width: 1180px){
+      #popout_banner {
+        width: 100vw !important;
+        height: 150px; 
+        left:0 !important;
+      }
+      #closeButton3 {
+        left:0 !important;
+      }
+    }
     
     
  
