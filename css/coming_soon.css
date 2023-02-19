@@ -240,3 +240,8 @@ body {
 			display: none;
 		}
 	  }
+	  @media only screen and (max-width: 175px) {
+		#user-icon-1 {
+		  display: none;
+		}
+	  }
