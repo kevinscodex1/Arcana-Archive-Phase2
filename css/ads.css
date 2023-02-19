@@ -30,7 +30,6 @@
     right: 0;
   }
 
-
   @keyframes slide-in-left {
     from {
       transform: translateX(-250px);
@@ -65,7 +64,7 @@
           }
         }
 
-    @media screen and (max-width: 1181px) {
+    @media screen and (max-width: 380px) {
         #popout_banner{
             width: 100vw !important;
             height: 100px !important; 
@@ -86,11 +85,12 @@
            left: 0;
            right: 0;
          } 
+         .ads_adjust {
+          width: 125px !important;
+          height: 125px !important;
+        }
     }
 
-    .ads_adjust {
-      width: 125px !important;
-      height: 125px !important;
-    }
+    
     
  

@@ -191,7 +191,17 @@ body {
 		margin-bottom: 30px;
 	}
 }
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 /* Navbar CSS start here */
+@media (min-width: 820px) and (max-width: 1180px) {
+    .col-md-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
 @media (max-width: 500px) {
 	.navbar-brand {
 	  display: flex;

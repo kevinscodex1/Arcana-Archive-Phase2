@@ -91,18 +91,6 @@
 
 } 
 /*--Sign In Html*/
-/*--Search Bar*/
-
-#book:hover {
-    box-shadow: 20px 20px 100px -50px #000;
-    transition: 0.3s;
-}
-
-.card_size {
-    height: 230px;
-    width: 210px;
-}
-/*--Search Bar*/
 
 /* icon styles */
 #user-icon:hover {
