@@ -216,7 +216,7 @@ body {
 	  left: 50%;
 	  transform: translateX(-50%);
 	}
-	.navbar-brand .text-warning {
+	.navbar-brand .text-warning, .text-white {
 	  display: none;
 	}
   }
