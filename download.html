@@ -1,190 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Arcana Archive</title>
-        <link
-          href="img/icon_light.ico"
-          rel="icon"
-          type="png/x-icon"
-          media="(prefers-color-scheme: light)"
-        />
-        <link
-          href="img/icon_dark.ico"
-          rel="icon"
-          type="png/x-icon"
-          media="(prefers-color-scheme: dark)"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/custom.css" />
-        <link rel="stylesheet" href="css/transition.css" />
-        <link rel="stylesheet" href="css/import_style.css" />
-        <!-- All CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-          rel="stylesheet"
-        />
-        
-        <style>
-        .navbar-dark .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 193, 7, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-          }
-    
-          .navbar-dark .navbar-toggler-icon {
-            border: 2px solid rgb(255, 193, 7);
-          }
-          /* Added style for the download page- */
-          * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
-          .container-fluid {
-            width: 100vw;
-            height: 100vh;
-            background-image: url(img/bg-download.jpg);
-            background-position: center;
-            background-size: cover;
-            padding: 0 8%;
-            padding-top: 30px;
-          }
-          .downloadContent {
-            top:50%;
-            position: absolute;
-            transform: translateY(-50%);
-            color: #fff;
-          }
-          .downloadContent h1 {
-            font-size: 64px;
-            font-weight: 600;
-          }
-          .downloadContent h1 span {
-            color: rgb(255, 193, 7);
-          }
-          .downloadContent button {
-            background: #fff;
-            border: 5px solid rgb(255, 193, 7);
-            outline: none;
-            padding: 12px 25px;
-            color:rgb(0, 0, 0);
-            border-radius: 25px 25px 25px 25px;
-            display: flex;
-            align-items: center;
-            margin-top: 30px;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 500;
-          }
-          .downloadContent button img {
-            width: 20px;
-            margin-left: 10px;
-          }
-          .launch-time {
-            display: flex;
-          }
-          .launch-time div {
-            flex-basis: 110px;
-          }
-          .launch-time div p {
-            font-size: 60px;
-            margin-bottom: -14px;
-          }
-          .navbar-brand {
-            margin-top: 30px;;
-          }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcana Archive</title>
+    <link
+      href="img/icon_light.ico"
+      rel="icon"
+      type="png/x-icon"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      href="img/icon_dark.ico"
+      rel="icon"
+      type="png/x-icon"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/transition.css" />
+    <link rel="stylesheet" href="css/import_style.css" />
+    <!-- All CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      rel="stylesheet"
+    />
 
-          @media only screen and (max-width: 767px) {
+    <style>
+      .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 193, 7, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .navbar-dark .navbar-toggler-icon {
+        border: 2px solid rgb(255, 193, 7);
+      }
+      /* Added style for the download page- */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container-fluid {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(img/bg-download.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 8%;
+        padding-top: 30px;
+      }
+      .downloadContent {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+      }
+      .downloadContent h1 {
+        font-size: 64px;
+        font-weight: 600;
+      }
+      .downloadContent h1 span {
+        color: rgb(255, 193, 7);
+      }
+      .downloadContent button {
+        background: #fff;
+        border: 5px solid rgb(255, 193, 7);
+        outline: none;
+        padding: 12px 25px;
+        color: rgb(0, 0, 0);
+        border-radius: 25px 25px 25px 25px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .downloadContent button img {
+        width: 20px;
+        margin-left: 10px;
+      }
+      .launch-time {
+        display: flex;
+      }
+      .launch-time div {
+        flex-basis: 110px;
+      }
+      .launch-time div p {
+        font-size: 60px;
+        margin-bottom: -14px;
+      }
+      .navbar-brand {
+        margin-top: 30px;
+      }
+
+      @media only screen and (max-width: 767px) {
         body {
           font-size: 12px;
         }
         .downloadContent h1 {
-            font-size: 35px;
-            font-weight: 600;
-          }
-          .launch-time div p {
-            font-size: 30px;
-          }
-          button {
-            width: 120px;
-          }
+          font-size: 35px;
+          font-weight: 600;
+        }
+        .launch-time div p {
+          font-size: 30px;
+        }
+        button {
+          width: 120px;
+        }
       }
-        </style>
-        <!--All CSS--end-->
-
-        
-        
-      </head>
-<body>
+    </style>
+    <!--All CSS--end-->
+  </head>
+  <body>
     <div class="container-fluid">
-        <a class="navbar-brand" href="home.html">
-            <img class="me-2" src="img/web_logo.png" width="40" height="40" />
-            <span class="text-warning">ARC<span class="text-white">ANA</span>
-          </a>
-          <a href="index.html" ><p class="fas fa-arrow-left back-button"></p></a>
-        <div class="downloadContent">
-            <p>Website is Under Maintenance</p>
-            <h1 id="launch">We're <span><br />Launching</span> Soon..</h1>
-            <div class="launch-time">
-                <div>
-                    <p id="days">00</p>
-                    <span>Days</span>
-                </div>
-                <div>
-                    <p id="hours">00</p>
-                    <span>Hours</span>
-                </div>
-                <div>
-                    <p id="minutes">00</p>
-                    <span>Minutes</span>
-                </div>
-                <div>
-                    <p id="seconds">00</p>
-                    <span>Seconds</span>
-                </div>
-            </div>
-            <button type="Button">Learn More <img src="img/infinity.gif" /></button>
+      <a class="navbar-brand" href="index.html">
+        <img class="me-2" src="img/web_logo.png" width="40" height="40" />
+        <span class="text-warning">ARC</span><span class="text-white">ANA</span>
+      </a>
+      <a href="index.html"><p class="fas fa-arrow-left back-button"></p></a>
+      <div class="downloadContent">
+        <p>Page is Under Maintenance</p>
+        <h1 id="launch">
+          We're <span><br />Launching</span>A mobile app Soon..
+        </h1>
+        <div class="launch-time">
+          <div>
+            <p id="days">00</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours">00</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="minutes">00</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p id="seconds">00</p>
+            <span>Seconds</span>
+          </div>
         </div>
+        <button type="Button">Learn More <img src="img/infinity.gif" /></button>
+      </div>
     </div>
     <script>
-        var countDownDate = new Date("May 29, 2023 00:00:00").getTime();
-        var x = setInterval(function(){
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
+      var countDownDate = new Date("May 29, 2023 00:00:00").getTime();
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
 
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
-
-            if (distance < 0){
-                clearInterval(x);
-                document.getElementById("days").innerHTML = "00";
-            document.getElementById("hours").innerHTML = "00";
-            document.getElementById("minutes").innerHTML = "00";
-            document.getElementById("seconds").innerHTML = "00";
-
-            }
-
-        },1000
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("days").innerHTML = "00";
+          document.getElementById("hours").innerHTML = "00";
+          document.getElementById("minutes").innerHTML = "00";
+          document.getElementById("seconds").innerHTML = "00";
+        }
+      }, 1000);
     </script>
-</body>
+  </body>
 </html>

@@ -1,10 +1,5 @@
 $(document).ready(function () {
     let remember = localStorage.getItem("remember");
-    if (remember) {
-      // Redirect to the home page if the user was remembered
-      window.location.href = "index.html";
-    }
-  
     $("#login_form").submit(function (x) {
       // Prevent the form from submitting and refreshing the page
       x.preventDefault();
@@ -27,10 +22,13 @@ $(document).ready(function () {
         }
   
         // Redirect to the user page
-        window.location.href = "user.html";
-      } else {
+        window.location.href = "user-premium.html";
+      } else if(
+        (email == "admin123@gmail.com" || username == "admin123") &&
+        password == "Admin*123"
+      ) { window.location.href = "user-basic.html"; } else {
         // Show an error message if the email and password don't match
-        alert("Invalid email or password");
+        alert("Invalid input");
       }
     });
   });

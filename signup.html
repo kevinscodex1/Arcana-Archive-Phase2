@@ -18,7 +18,10 @@
       type="png/x-icon"
       media="(prefers-color-scheme: dark)"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <script src="js/sign_up.js"></script>
     <title>Sign up</title>
   </head>
@@ -26,39 +29,70 @@
     <div class="uc__wrapper">
       <div class="container">
         <div class="row">
-          
-      <a href="index.html" ><p class="fas fa-arrow-left back-button"></p></a>
-    </div>
-</div>
+          <a href="index.html"><p class="fas fa-arrow-left back-button"></p></a>
+        </div>
+      </div>
       <div class="uc__details">
-         <h1 class="title">Registration Form</h1>
-        <h3 class="intro">
-          Please fill in this form to create an account.
-        </h3>
+        <h1 class="title">Registration Form</h1>
+        <h3 class="intro">Please fill in this form to create an account.</h3>
         <div class="uc__subscribe">
           <div class="uc__form">
             <form action="#" onsubmit="register(); return false;">
               <div class="container">
                 <label class="#" id="#">Username</label><br />
-                <input class="form-margin" type="text" placeholder="Enter Username" required id="username" name="username"><br />
+                <input
+                  class="form-margin"
+                  type="text"
+                  placeholder="Enter Username"
+                  required
+                  id="username"
+                  name="username"
+                /><br />
                 <label class="#" id="#">Email</label><br />
-                <input class="form-margin" type="text" placeholder="Enter Email" required id="email"><br />
+                <input
+                  class="form-margin"
+                  type="text"
+                  placeholder="Enter Email"
+                  required
+                  id="email"
+                /><br />
                 <label class="#" id="#">Password</label><br />
                 <div class="password-container">
-                  <input class="form-margin" type="password" placeholder="Enter Password" required id="password">
+                  <input
+                    class="form-margin"
+                    type="password"
+                    placeholder="Enter Password"
+                    required
+                    id="password"
+                  />
                   <span class="password-toggle" onclick="showPassword()">
-                    <img src="img/view.png">
+                    <img src="img/view.png" />
                   </span>
                 </div>
-                <p class="reminder">Requires 8+ characters with 1 uppercase, 1 special character, and at least 1 number.</p>
+                <p class="reminder">
+                  Requires 8+ characters with 1 uppercase, 1 special character,
+                  and at least 1 number.
+                </p>
                 <label class="#" id="#">Confirm Password</label><br />
                 <div class="password-container">
-                  <input class="form-margin" type="password" placeholder="Enter Password" required id="confirm-password">
-                  <span class="password-toggle-confirm" onclick="showConfirmPassword()">
-                    <img src="img/view.png">
+                  <input
+                    class="form-margin"
+                    type="password"
+                    placeholder="Enter Password"
+                    required
+                    id="confirm-password"
+                  />
+                  <span
+                    class="password-toggle-confirm"
+                    onclick="showConfirmPassword()"
+                  >
+                    <img src="img/view.png" />
                   </span>
                 </div>
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <p>
+                  By creating an account you agree to our
+                  <a href="#">Terms & Privacy</a>.
+                </p>
                 <button type="submit" class="register-btn">Register</button>
               </div>
               <div class="container">
@@ -66,11 +100,11 @@
               </div>
             </form>
           </div>
-          
         </div>
       </div>
       <div class="uc__art">
-        <a href="index.html"><img src="img/coming_soon.png" class="img-fluid" alt="waiting"
+        <a href="index.html"
+          ><img src="img/coming_soon.png" class="img-fluid" alt="waiting"
         /></a>
         <div class="image-text">Start your journey now..</div>
       </div>
