@@ -380,16 +380,16 @@ section {
   transition: var(--transition-1);
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .reaD {
-  width: 70%;
+  width: 0%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .wriTe {
-  width: 15%;
+  width: 0%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .viEw {
-  width: 5%;
+  width: 0%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .poSt {
-  width: 10%;
+  width: 0%;
 }
 
 .stat-title {
@@ -789,4 +789,4 @@ section {
   100% {
     background-position: 0% 50%;
   }
-}/*# sourceMappingURL=userStyles.css.map */
+}/*# sourceMappingURL=user2.css.map */
